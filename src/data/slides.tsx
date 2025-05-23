@@ -672,7 +672,7 @@ export const slides = [
             </div>
             <div className="mt-8 flex justify-center">
               <Button className="bg-brand-blue hover:bg-brand-blue/90 text-white font-medium px-6 py-6">
-                Agendar Minha Análise
+                <a href="https://wa.me/5562996920050">Agendar Minha Análise</a>
               </Button>
             </div>
           </div>
@@ -686,7 +686,7 @@ export const slides = [
     content: (
       <SlideContent>
         <div className="flex flex-col items-center justify-center h-full">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-blue">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-10">
             Contato
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 items-center">
