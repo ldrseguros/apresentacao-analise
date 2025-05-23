@@ -14,13 +14,13 @@ const SlideTitle: React.FC<SlideTitleProps> = ({
   as = "h2",
   animated = true,
 }) => {
-  const baseClasses = "font-bold mb-6 text-brand-blue";
+  const baseClasses = "font-bold mb-4 text-brand-blue";
   const Component = as;
 
   const sizeClasses = {
-    h1: "text-5xl md:text-6xl",
-    h2: "text-4xl md:text-5xl",
-    h3: "text-3xl md:text-4xl",
+    h1: "text-4xl md:text-5xl",
+    h2: "text-3xl md:text-4xl",
+    h3: "text-2xl md:text-3xl",
   };
 
   const animationClasses = animated ? "animate-slide-in" : "";
