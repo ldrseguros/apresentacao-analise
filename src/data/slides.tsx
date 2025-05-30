@@ -53,22 +53,22 @@ export const slides = [
     title:
       "Sua Segurança Real: Desvendando o Valor da Análise Técnica no Seu Seguro",
     content: (
-      <div className="flex flex-col items-center justify-center h-full">
-        <Logo type="ldr" className="mb-8" />
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center text-white">
+      <div className="flex flex-col items-center justify-center h-full px-4">
+        <Logo type="ldr" className="mb-6 sm:mb-8" />
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-3 sm:mb-4 text-center text-white leading-tight">
           Sua Segurança Real
         </h1>
-        <h2 className="text-2xl md:text-3xl font-medium mb-12 text-center text-white opacity-90">
+        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium mb-8 sm:mb-12 text-center text-white opacity-90 px-2">
           Desvendando o Valor da Análise Técnica no Seu Seguro
         </h2>
-        <div className="flex items-center gap-4 mt-4">
+        <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mt-4">
           <ProfilePhoto
             image="/lovable-uploads/319586b9-9cc9-43e8-bde8-0c002135d72d.png"
             size="md"
           />
-          <div className="text-left text-white">
-            <p className="text-xl font-medium">Gustavo Mariano</p>
-            <p className="text-sm opacity-80">
+          <div className="text-center sm:text-left text-white">
+            <p className="text-lg sm:text-xl font-medium">Gustavo Mariano</p>
+            <p className="text-xs sm:text-sm opacity-80">
               Especialista em Análise de Riscos
             </p>
           </div>
@@ -83,17 +83,17 @@ export const slides = [
     content: (
       <SlideContent>
         <SlideTitle>Você se Sente Totalmente Protegido?</SlideTitle>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <div>
             <SlideText delay={200}>O seguro é um passo importante.</SlideText>
-            <SlideText delay={400} className="font-medium text-xl">
+            <SlideText delay={400} className="font-medium text-lg sm:text-xl">
               Mas... ele realmente cobre tudo o que pode te afetar?
             </SlideText>
             <SlideText delay={600}>
               Você conhece cada detalhe das Condições Gerais?
             </SlideText>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-4 md:mt-0">
             <SlideIcon
               icon={AlertTriangle}
               size="xl"
@@ -111,49 +111,55 @@ export const slides = [
       <SlideContent>
         <SlideTitle>O Risco Existe... E Evolui.</SlideTitle>
         <SlideText>Imprevistos fazem parte da vida e dos negócios.</SlideText>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 mt-8">
-          <div className="flex items-start gap-3">
-            <div className="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0">
-              <FileSearch className="w-6 h-6 text-white" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 sm:gap-x-12 gap-y-4 sm:gap-y-6 mt-6 sm:mt-8">
+          <div className="flex items-start gap-2 sm:gap-3">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0">
+              <FileSearch className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
             <div>
-              <h3 className="font-medium text-lg">Processos judiciais</h3>
-              <p className="text-gray-600">
+              <h3 className="font-medium text-base sm:text-lg">
+                Processos judiciais
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
                 Ações que podem comprometer seu patrimônio
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-3">
-            <div className="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0">
-              <AlertTriangle className="w-6 h-6 text-white" />
+          <div className="flex items-start gap-2 sm:gap-3">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0">
+              <AlertTriangle className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
             <div>
-              <h3 className="font-medium text-lg">Falhas operacionais</h3>
-              <p className="text-gray-600">
+              <h3 className="font-medium text-base sm:text-lg">
+                Falhas operacionais
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
                 Erros que impactam seus clientes e negócios
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-3">
-            <div className="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0">
-              <Shield className="w-6 h-6 text-white" />
+          <div className="flex items-start gap-2 sm:gap-3">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0">
+              <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
             <div>
-              <h3 className="font-medium text-lg">
+              <h3 className="font-medium text-base sm:text-lg">
                 Danos materiais/cibernéticos
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm sm:text-base">
                 Perdas físicas e digitais cada vez mais frequentes
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-3">
-            <div className="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0">
-              <FileCheck className="w-6 h-6 text-white" />
+          <div className="flex items-start gap-2 sm:gap-3">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0">
+              <FileCheck className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
             <div>
-              <h3 className="font-medium text-lg">Imprevistos contratuais</h3>
-              <p className="text-gray-600">
+              <h3 className="font-medium text-base sm:text-lg">
+                Imprevistos contratuais
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
                 Cláusulas com responsabilidades ocultas
               </p>
             </div>
@@ -168,7 +174,7 @@ export const slides = [
     content: (
       <SlideContent>
         <SlideTitle>A Lacuna Invisível na Proteção Comum</SlideTitle>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <div>
             <SlideList
               items={[
@@ -180,23 +186,27 @@ export const slides = [
               iconType="number"
             />
           </div>
-          <div className="relative">
-            <div className="rounded-xl bg-gray-100 p-6 relative z-10">
-              <div className="text-center mb-4">
-                <span className="text-xl font-semibold">Riscos Reais</span>
+          <div className="relative mt-6 md:mt-0">
+            <div className="rounded-xl bg-gray-100 p-4 sm:p-6 relative z-10">
+              <div className="text-center mb-3 sm:mb-4">
+                <span className="text-lg sm:text-xl font-semibold">
+                  Riscos Reais
+                </span>
               </div>
               <SlideConnector direction="horizontal" style="arrow" />
-              <div className="text-center my-4">
-                <span className="text-xl font-semibold">Seguro Padrão</span>
+              <div className="text-center my-3 sm:my-4">
+                <span className="text-lg sm:text-xl font-semibold">
+                  Seguro Padrão
+                </span>
               </div>
-              <div className="mt-6 p-4 bg-yellow-100 border-2 border-brand-yellow rounded-lg animate-pulse">
-                <div className="text-center text-red-500 font-bold">
+              <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-yellow-100 border-2 border-brand-yellow rounded-lg animate-pulse">
+                <div className="text-center text-red-500 font-bold text-sm sm:text-base">
                   LACUNA DE PROTEÇÃO
                 </div>
               </div>
             </div>
-            <div className="absolute top-4 right-4 w-20 h-20 bg-brand-yellow opacity-20 rounded-full -z-10"></div>
-            <div className="absolute bottom-4 left-4 w-16 h-16 bg-brand-blue opacity-10 rounded-full -z-10"></div>
+            <div className="absolute top-2 right-2 sm:top-4 sm:right-4 w-16 h-16 sm:w-20 sm:h-20 bg-brand-yellow opacity-20 rounded-full -z-10"></div>
+            <div className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 w-12 h-12 sm:w-16 sm:h-16 bg-brand-blue opacity-10 rounded-full -z-10"></div>
           </div>
         </div>
       </SlideContent>
@@ -216,57 +226,61 @@ export const slides = [
             Contratos.
           </SlideText>
         </div>
-        <div className="flex flex-col md:flex-row gap-4 mt-8">
-          <div className="flex-1 bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
+        <div className="flex flex-col md:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8">
+          <div className="flex-1 bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200 shadow-sm">
             <div className="text-center mb-2">
-              <div className="w-12 h-12 rounded-full bg-brand-blue inline-flex items-center justify-center mb-2">
-                <Search className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-brand-blue inline-flex items-center justify-center mb-2">
+                <Search className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <h3 className="font-medium">1. Entender Sua Operação</h3>
+              <h3 className="font-medium text-sm sm:text-base">
+                1. Entender Sua Operação
+              </h3>
             </div>
           </div>
           <div className="hidden md:block">
-            <ArrowRight className="w-6 h-6 text-brand-blue mt-8" />
+            <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-brand-blue mt-6 sm:mt-8" />
           </div>
           <div className="md:hidden mx-auto">
-            <ArrowDownIcon className="w-6 h-6 text-brand-blue my-2" />
+            <ArrowDownIcon className="w-5 h-5 sm:w-6 sm:h-6 text-brand-blue my-1 sm:my-2" />
           </div>
-          <div className="flex-1 bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
+          <div className="flex-1 bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200 shadow-sm">
             <div className="text-center mb-2">
-              <div className="w-12 h-12 rounded-full bg-brand-blue inline-flex items-center justify-center mb-2">
-                <FileSearch className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-brand-blue inline-flex items-center justify-center mb-2">
+                <FileSearch className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <h3 className="font-medium">2. Analisar Seus Contratos</h3>
+              <h3 className="font-medium text-sm sm:text-base">
+                2. Analisar Seus Contratos
+              </h3>
             </div>
           </div>
           <div className="hidden md:block">
-            <ArrowRight className="w-6 h-6 text-brand-blue mt-8" />
+            <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-brand-blue mt-6 sm:mt-8" />
           </div>
           <div className="md:hidden mx-auto">
-            <ArrowDownIcon className="w-6 h-6 text-brand-blue my-2" />
+            <ArrowDownIcon className="w-5 h-5 sm:w-6 sm:h-6 text-brand-blue my-1 sm:my-2" />
           </div>
-          <div className="flex-1 bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
+          <div className="flex-1 bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200 shadow-sm">
             <div className="text-center mb-2">
-              <div className="w-12 h-12 rounded-full bg-brand-yellow inline-flex items-center justify-center mb-2">
-                <FileCheck className="w-6 h-6 text-brand-blue" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-brand-yellow inline-flex items-center justify-center mb-2">
+                <FileCheck className="w-5 h-5 sm:w-6 sm:h-6 text-brand-blue" />
               </div>
-              <h3 className="font-medium">
+              <h3 className="font-medium text-sm sm:text-base">
                 3. Cruzar com Condições Gerais do Seguro
               </h3>
             </div>
           </div>
           <div className="hidden md:block">
-            <ArrowRight className="w-6 h-6 text-brand-blue mt-8" />
+            <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-brand-blue mt-6 sm:mt-8" />
           </div>
           <div className="md:hidden mx-auto">
-            <ArrowDownIcon className="w-6 h-6 text-brand-blue my-2" />
+            <ArrowDownIcon className="w-5 h-5 sm:w-6 sm:h-6 text-brand-blue my-1 sm:my-2" />
           </div>
-          <div className="flex-1 bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
+          <div className="flex-1 bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200 shadow-sm">
             <div className="text-center mb-2">
-              <div className="w-12 h-12 rounded-full bg-brand-blue inline-flex items-center justify-center mb-2">
-                <Shield className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-brand-blue inline-flex items-center justify-center mb-2">
+                <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <h3 className="font-medium">
+              <h3 className="font-medium text-sm sm:text-base">
                 4. Oferecer Soluções Personalizadas
               </h3>
             </div>
@@ -403,53 +417,53 @@ export const slides = [
     content: (
       <SlideContent>
         <SlideTitle>Produtos Chave na Lente da Análise</SlideTitle>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8">
-          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-            <div className="flex justify-center mb-4">
-              <div className="w-20 h-20 rounded-full bg-brand-blue flex items-center justify-center">
-                <Users className="w-10 h-10 text-white" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 mt-6 sm:mt-8">
+          <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md border border-gray-200">
+            <div className="flex justify-center mb-3 sm:mb-4">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-brand-blue flex items-center justify-center">
+                <Users className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-center mb-4 text-brand-blue">
+            <h3 className="text-lg sm:text-xl font-bold text-center mb-3 sm:mb-4 text-brand-blue leading-tight">
               Responsabilidade Civil Profissional (RCP)
             </h3>
-            <p className="text-gray-600 mb-4 text-center">
+            <p className="text-gray-600 mb-4 text-center text-sm sm:text-base">
               Cobertura alinhada aos seus serviços e contratos com seus
               clientes.
             </p>
-            <div className="flex flex-wrap justify-center gap-2 mt-6">
-              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-3 py-1 rounded-full text-sm">
+            <div className="flex flex-wrap justify-center gap-1 sm:gap-2 mt-4 sm:mt-6">
+              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">
                 Erros e Omissões
               </span>
-              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-3 py-1 rounded-full text-sm">
+              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">
                 Danos a Terceiros
               </span>
-              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-3 py-1 rounded-full text-sm">
+              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">
                 Defesa Jurídica
               </span>
             </div>
           </div>
-          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-            <div className="flex justify-center mb-4">
-              <div className="w-20 h-20 rounded-full bg-brand-blue flex items-center justify-center">
-                <Shield className="w-10 h-10 text-white" />
+          <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md border border-gray-200">
+            <div className="flex justify-center mb-3 sm:mb-4">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-brand-blue flex items-center justify-center">
+                <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-center mb-4 text-brand-blue">
+            <h3 className="text-lg sm:text-xl font-bold text-center mb-3 sm:mb-4 text-brand-blue">
               Seguro Empresarial
             </h3>
-            <p className="text-gray-600 mb-4 text-center">
+            <p className="text-gray-600 mb-4 text-center text-sm sm:text-base">
               Proteção do seu negócio considerando sua operação, patrimônio e
               responsabilidades contratuais/legais.
             </p>
-            <div className="flex flex-wrap justify-center gap-2 mt-6">
-              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-3 py-1 rounded-full text-sm">
+            <div className="flex flex-wrap justify-center gap-1 sm:gap-2 mt-4 sm:mt-6">
+              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">
                 Patrimônio
               </span>
-              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-3 py-1 rounded-full text-sm">
+              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">
                 Lucros Cessantes
               </span>
-              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-3 py-1 rounded-full text-sm">
+              <span className="bg-brand-blue bg-opacity-10 text-brand-blue px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">
                 RC Operações
               </span>
             </div>
@@ -466,81 +480,87 @@ export const slides = [
         <SlideTitle>
           Case de Sucesso: Segurança Comprovada na Prática
         </SlideTitle>
-        <div className="bg-white rounded-lg p-4 shadow-md border border-gray-200">
-          <h3 className="text-xl font-bold mb-4 text-brand-blue">
+        <div className="bg-white rounded-lg p-3 sm:p-4 shadow-md border border-gray-200">
+          <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-brand-blue">
             Empresa de Tecnologia - Prestação de Serviços
           </h3>
 
           <div className="relative">
-            <div className="ml-8 border-l-2 border-brand-blue pl-6 py-1">
-              <h4 className="font-medium">Situação Inicial</h4>
-              <p className="text-gray-600 mb-4">
+            <div className="ml-6 sm:ml-8 border-l-2 border-brand-blue pl-4 sm:pl-6 py-1">
+              <h4 className="font-medium text-sm sm:text-base">
+                Situação Inicial
+              </h4>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm">
                 Cliente tinha seguro básico, sem considerar as exigências
                 contratuais dos clientes
               </p>
             </div>
             <div className="absolute left-0 top-2">
-              <div className="w-8 h-8 rounded-full bg-brand-blue text-white flex items-center justify-center">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-brand-blue text-white flex items-center justify-center text-xs sm:text-sm font-bold">
                 1
               </div>
             </div>
           </div>
 
           <div className="relative">
-            <div className="ml-8 border-l-2 border-brand-blue pl-6 py-1">
-              <h4 className="font-medium">Nossa Análise Revelou</h4>
-              <p className="text-gray-600 mb-4">
+            <div className="ml-6 sm:ml-8 border-l-2 border-brand-blue pl-4 sm:pl-6 py-1">
+              <h4 className="font-medium text-sm sm:text-base">
+                Nossa Análise Revelou
+              </h4>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm">
                 Cláusulas de responsabilidade civil nos contratos exigiam
                 coberturas específicas ausentes na apólice
               </p>
             </div>
             <div className="absolute left-0 top-2">
-              <div className="w-8 h-8 rounded-full bg-brand-blue text-white flex items-center justify-center">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-brand-blue text-white flex items-center justify-center text-xs sm:text-sm font-bold">
                 2
               </div>
             </div>
           </div>
 
           <div className="relative">
-            <div className="ml-8 border-l-2 border-brand-blue pl-6 py-1">
-              <h4 className="font-medium">Ação Implementada</h4>
-              <p className="text-gray-600 mb-4">
+            <div className="ml-6 sm:ml-8 border-l-2 border-brand-blue pl-4 sm:pl-6 py-1">
+              <h4 className="font-medium text-sm sm:text-base">
+                Ação Implementada
+              </h4>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm">
                 Contratação de RC Profissional com cláusulas específicas para
                 atender exigências contratuais
               </p>
             </div>
             <div className="absolute left-0 top-2">
-              <div className="w-8 h-8 rounded-full bg-brand-blue text-white flex items-center justify-center">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-brand-blue text-white flex items-center justify-center text-xs sm:text-sm font-bold">
                 3
               </div>
             </div>
           </div>
 
           <div className="relative">
-            <div className="ml-8 pl-6 py-1">
-              <h4 className="font-medium">Resultado</h4>
-              <p className="text-gray-600">
+            <div className="ml-6 sm:ml-8 pl-4 sm:pl-6 py-1">
+              <h4 className="font-medium text-sm sm:text-base">Resultado</h4>
+              <p className="text-gray-600 text-xs sm:text-sm">
                 3 meses depois, um erro no software causou prejuízo ao cliente.
                 A indenização de R$ 180.000 foi integralmente coberta pela
                 seguradora.
               </p>
             </div>
             <div className="absolute left-0 top-2">
-              <div className="w-8 h-8 rounded-full bg-brand-yellow text-brand-blue flex items-center justify-center font-bold">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-brand-yellow text-brand-blue flex items-center justify-center font-bold text-xs sm:text-sm">
                 ✓
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-4 p-4 bg-green-50 border-l-4 border-green-500 rounded">
+        <div className="mt-3 sm:mt-4 p-3 sm:p-4 bg-green-50 border-l-4 border-green-500 rounded">
           <div className="flex items-center gap-2">
-            <Award className="w-6 h-6 text-green-500" />
-            <span className="font-bold">
+            <Award className="w-5 h-5 sm:w-6 sm:h-6 text-green-500 flex-shrink-0" />
+            <span className="font-bold text-sm sm:text-base">
               Economia para o cliente: R$ 180.000
             </span>
           </div>
-          <p className="mt-2">
+          <p className="mt-2 text-xs sm:text-sm">
             Sem a análise, o sinistro teria sido negado e o cliente arcaria com
             todo o prejuízo.
           </p>
@@ -616,23 +636,24 @@ export const slides = [
         <SlideTitle className="mt-4">
           Pronto Para Blindar Seu Futuro?
         </SlideTitle>
-        <div className="flex flex-row gap-10 items-center">
-          <div className="flex flex-row items-center gap-4 mb-8">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-10 items-start lg:items-center">
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mb-6 lg:mb-8">
             <ProfilePhoto
               image="/lovable-uploads/8c243293-1d1c-418a-914a-7e92c30a6b51.png"
-              className="w-2/6 h-2/6"
+              className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32"
+              size="sm"
             />
-            <div className="flex flex-col ml-14 gap-4">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-2xl font-bold text-brand-blue">
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <div className="flex flex-col gap-1 sm:gap-2 text-center sm:text-left">
+                <h3 className="text-xl sm:text-2xl font-bold text-brand-blue">
                   Gustavo Mariano
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-sm sm:text-base">
                   Especialista em Análise de Riscos
                 </p>
               </div>
               <SlideList
-                className="text-sm"
+                className="text-xs sm:text-sm"
                 items={[
                   "Não espere o imprevisto chegar.",
                   "Dê o próximo passo: Agende sua Análise de Riscos e Contratos.",
@@ -643,35 +664,41 @@ export const slides = [
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-lg p-8 border border-gray-200 shadow-sm">
-            <h3 className="text-xl font-bold mb-4 text-center text-brand-blue">
+          <div className="bg-gray-50 rounded-lg p-4 sm:p-6 lg:p-8 border border-gray-200 shadow-sm w-full lg:max-w-md">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-center text-brand-blue">
               Agende Sua Análise
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               <div
-                className="flex items-center gap-3 animate-slide-in"
+                className="flex items-center gap-2 sm:gap-3 animate-slide-in"
                 style={{ animationDelay: "200ms" }}
               >
-                <Clock className="w-6 h-6 text-brand-yellow flex-shrink-0" />
-                <p>Duração: Aproximadamente 1 hora</p>
+                <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-brand-yellow flex-shrink-0" />
+                <p className="text-xs sm:text-sm">
+                  Duração: Aproximadamente 1 hora
+                </p>
               </div>
               <div
-                className="flex items-center gap-3 animate-slide-in"
+                className="flex items-center gap-2 sm:gap-3 animate-slide-in"
                 style={{ animationDelay: "400ms" }}
               >
-                <Users className="w-6 h-6 text-brand-yellow flex-shrink-0" />
-                <p>Participantes: Você e nosso especialista</p>
+                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-brand-yellow flex-shrink-0" />
+                <p className="text-xs sm:text-sm">
+                  Participantes: Você e nosso especialista
+                </p>
               </div>
               <div
-                className="flex items-center gap-3 animate-slide-in"
+                className="flex items-center gap-2 sm:gap-3 animate-slide-in"
                 style={{ animationDelay: "600ms" }}
               >
-                <FileSearch className="w-6 h-6 text-brand-yellow flex-shrink-0" />
-                <p>Traga: Contratos e apólices atuais (se tiver)</p>
+                <FileSearch className="w-5 h-5 sm:w-6 sm:h-6 text-brand-yellow flex-shrink-0" />
+                <p className="text-xs sm:text-sm">
+                  Traga: Contratos e apólices atuais (se tiver)
+                </p>
               </div>
             </div>
-            <div className="mt-8 flex justify-center">
-              <Button className="bg-brand-blue hover:bg-brand-blue/90 text-white font-medium px-6 py-6">
+            <div className="mt-6 sm:mt-8 flex justify-center">
+              <Button className="bg-brand-blue hover:bg-brand-blue/90 text-white font-medium px-4 sm:px-6 py-4 sm:py-6 text-sm sm:text-base">
                 <a href="https://wa.me/5562996920050">Agendar Minha Análise</a>
               </Button>
             </div>

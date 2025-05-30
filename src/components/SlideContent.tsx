@@ -15,7 +15,7 @@ const SlideContent: React.FC<SlideContentProps> = ({
   return (
     <div
       className={cn(
-        "h-full flex flex-col justify-center p-12 ml-10 mr-10",
+        "h-full flex flex-col justify-center p-4 sm:p-8 md:p-12 mx-2 sm:mx-6 md:mx-10",
         animated && "animate-fade-in",
         className
       )}

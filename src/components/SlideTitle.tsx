@@ -18,9 +18,9 @@ const SlideTitle: React.FC<SlideTitleProps> = ({
   const Component = as;
 
   const sizeClasses = {
-    h1: "text-4xl md:text-5xl",
-    h2: "text-3xl md:text-4xl",
-    h3: "text-2xl md:text-3xl",
+    h1: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl",
+    h2: "text-xl sm:text-2xl md:text-3xl lg:text-4xl",
+    h3: "text-lg sm:text-xl md:text-2xl lg:text-3xl",
   };
 
   const animationClasses = animated ? "animate-slide-in" : "";

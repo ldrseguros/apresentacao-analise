@@ -12,9 +12,9 @@ const ProfilePhoto: React.FC<ProfilePhotoProps> = ({
   size = "md",
 }) => {
   const sizeClasses = {
-    sm: "w-20 h-20",
-    md: "w-32 h-32",
-    lg: "w-50 h-50",
+    sm: "w-16 h-16 sm:w-20 sm:h-20",
+    md: "w-24 h-24 sm:w-32 sm:h-32",
+    lg: "w-32 h-32 sm:w-40 sm:h-40 md:w-50 md:h-50",
   };
 
   return (
