@@ -19,7 +19,7 @@ const SlideText: React.FC<SlideTextProps> = ({
   return (
     <div
       className={cn(
-        "text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mb-4 animate-slide-in",
+        "text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mb-3 xs:mb-4 animate-slide-in",
         className
       )}
       style={style}

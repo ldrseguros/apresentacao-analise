@@ -1,51 +1,56 @@
 import React from "react";
-import { CheckIcon } from "lucide-react";
+import { CheckCircle, Circle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface SlideListProps {
   items: string[];
+  iconType?: "check" | "number" | "bullet";
   className?: string;
-  iconType?: "check" | "bullet" | "number" | "none";
-  animated?: boolean;
 }
 
 const SlideList: React.FC<SlideListProps> = ({
   items,
-  className = "",
   iconType = "check",
-  animated = true,
+  className = "",
 }) => {
+  const renderIcon = (index: number) => {
+    switch (iconType) {
+      case "check":
+        return (
+          <CheckCircle className="w-4 h-4 xs:w-5 xs:h-5 text-brand-yellow flex-shrink-0" />
+        );
+      case "number":
+        return (
+          <div className="w-5 h-5 xs:w-6 xs:h-6 rounded-full bg-brand-blue text-white flex items-center justify-center text-xs xs:text-sm font-bold flex-shrink-0">
+            {index + 1}
+          </div>
+        );
+      case "bullet":
+        return (
+          <Circle className="w-3 h-3 xs:w-4 xs:h-4 text-brand-blue flex-shrink-0" />
+        );
+      default:
+        return (
+          <CheckCircle className="w-4 h-4 xs:w-5 xs:h-5 text-brand-yellow flex-shrink-0" />
+        );
+    }
+  };
+
   return (
-    <ul
-      className={cn(
-        "space-y-2 sm:space-y-3 text-sm sm:text-base md:text-lg",
-        className
-      )}
-    >
+    <div className={cn("space-y-2 xs:space-y-3", className)}>
       {items.map((item, index) => (
-        <li
+        <div
           key={index}
-          className={cn(
-            "flex items-start gap-2 sm:gap-3",
-            animated && "animate-slide-in"
-          )}
-          style={{ animationDelay: `${index * 200}ms` }}
+          className="flex items-start gap-2 xs:gap-3 animate-slide-in"
+          style={{ animationDelay: `${index * 100}ms` }}
         >
-          {iconType === "check" && (
-            <CheckIcon className="h-5 w-5 sm:h-6 sm:w-6 text-brand-yellow flex-shrink-0 mt-0.5" />
-          )}
-          {iconType === "bullet" && (
-            <div className="h-2 w-2 bg-brand-yellow rounded-full mt-2 sm:mt-2.5 flex-shrink-0" />
-          )}
-          {iconType === "number" && (
-            <div className="h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-brand-blue text-white flex items-center justify-center flex-shrink-0 font-bold text-xs sm:text-sm">
-              {index + 1}
-            </div>
-          )}
-          <span>{item}</span>
-        </li>
+          {renderIcon(index)}
+          <span className="text-gray-700 text-xs xs:text-sm sm:text-base">
+            {item}
+          </span>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 };
 
